@@ -1,0 +1,93 @@
+{
+  "name": "flipbook-pembelajaran-sd",
+  "version": "1.0.0",
+  "description": "Sistem flipbook pembelajaran digital interaktif untuk siswa Sekolah Dasar",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=8000",
+    "build": "echo 'Build completed'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "flipbook",
+    "pembelajaran",
+    "sekolah-dasar",
+    "education",
+    "interactive",
+    "digital-learning",
+    "indonesia",
+    "matematika",
+    "bahasa-indonesia",
+    "ipa",
+    "ips",
+    "pkn"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your-email@domain.com",
+    "url": "https://your-website.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/flipbook-pembelajaran-sd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/flipbook-pembelajaran-sd/issues"
+  },
+  "homepage": "https://github.com/yourusername/flipbook-pembelajaran-sd#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "files": [
+    "index.html",
+    "styles.css",
+    "script.js",
+    "README.md"
+  ],
+  "metadata": {
+    "title": "Flipbook Pembelajaran SD",
+    "subtitle": "Sistem Pembelajaran Digital Interaktif",
+    "target_audience": "Siswa SD Kelas 1-6",
+    "subjects": [
+      "Matematika",
+      "Bahasa Indonesia", 
+      "IPA",
+      "IPS",
+      "PKN"
+    ],
+    "grades": [
+      "Kelas 1",
+      "Kelas 2", 
+      "Kelas 3",
+      "Kelas 4",
+      "Kelas 5",
+      "Kelas 6"
+    ],
+    "features": [
+      "Konten Interaktif",
+      "Latihan Soal",
+      "Zoom Control",
+      "Fullscreen Mode",
+      "Progress Tracking",
+      "Responsive Design"
+    ],
+    "compatibility": [
+      "Chrome 60+",
+      "Firefox 55+", 
+      "Safari 12+",
+      "Edge 79+",
+      "Mobile browsers"
+    ]
+  }
+} 

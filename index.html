@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipbook Pembelajaran SD - Belajar Menyenangkan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-book-open"></i>
+                    Flipbook Pembelajaran SD
+                </h1>
+                <div class="header-controls">
+                    <button class="btn btn-secondary" id="fullscreenBtn">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                    <button class="btn btn-primary" id="menuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar Menu -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>Menu Pembelajaran</h3>
+                <button class="close-btn" id="closeMenu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h4>Mata Pelajaran</h4>
+                    <ul class="nav-list">
+                        <li><a href="#" data-subject="matematika" class="nav-link active">
+                            <i class="fas fa-calculator"></i> Matematika
+                        </a></li>
+                        <li><a href="#" data-subject="bahasa-indonesia" class="nav-link">
+                            <i class="fas fa-book"></i> Bahasa Indonesia
+                        </a></li>
+                        <li><a href="#" data-subject="ipa" class="nav-link">
+                            <i class="fas fa-flask"></i> IPA
+                        </a></li>
+                        <li><a href="#" data-subject="ips" class="nav-link">
+                            <i class="fas fa-globe"></i> IPS
+                        </a></li>
+                        <li><a href="#" data-subject="pkn" class="nav-link">
+                            <i class="fas fa-flag"></i> PKN
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h4>Kelas</h4>
+                    <ul class="nav-list">
+                        <li><a href="#" data-grade="1" class="nav-link">
+                            <i class="fas fa-star"></i> Kelas 1
+                        </a></li>
+                        <li><a href="#" data-grade="2" class="nav-link">
+                            <i class="fas fa-star"></i> Kelas 2
+                        </a></li>
+                        <li><a href="#" data-grade="3" class="nav-link">
+                            <i class="fas fa-star"></i> Kelas 3
+                        </a></li>
+                        <li><a href="#" data-grade="4" class="nav-link">
+                            <i class="fas fa-star"></i> Kelas 4
+                        </a></li>
+                        <li><a href="#" data-grade="5" class="nav-link">
+                            <i class="fas fa-star"></i> Kelas 5
+                        </a></li>
+                        <li><a href="#" data-grade="6" class="nav-link">
+                            <i class="fas fa-star"></i> Kelas 6
+                        </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Screen -->
+            <div class="welcome-screen" id="welcomeScreen">
+                <div class="welcome-content">
+                    <div class="welcome-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h2>Selamat Datang di Flipbook Pembelajaran SD</h2>
+                    <p>Pilih mata pelajaran dan kelas untuk mulai belajar dengan cara yang menyenangkan!</p>
+                    <div class="welcome-features">
+                        <div class="feature">
+                            <i class="fas fa-palette"></i>
+                            <span>Gambar Berwarna</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-volume-up"></i>
+                            <span>Suara Narasi</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Latihan Interaktif</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flipbook Container -->
+            <div class="flipbook-container" id="flipbookContainer" style="display: none;">
+                <div class="flipbook-controls">
+                    <button class="btn btn-control" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="page-info">
+                        <span id="currentPage">1</span> / <span id="totalPages">10</span>
+                    </div>
+                    <button class="btn btn-control" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="flipbook-viewer">
+                    <div class="page left-page" id="leftPage">
+                        <div class="page-content">
+                            <div class="page-number">1</div>
+                        </div>
+                    </div>
+                    <div class="page right-page" id="rightPage">
+                        <div class="page-content">
+                            <div class="page-number">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipbook-actions">
+                    <button class="btn btn-action" id="zoomInBtn">
+                        <i class="fas fa-search-plus"></i>
+                    </button>
+                    <button class="btn btn-action" id="zoomOutBtn">
+                        <i class="fas fa-search-minus"></i>
+                    </button>
+                    <button class="btn btn-action" id="audioBtn">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <button class="btn btn-action" id="quizBtn">
+                        <i class="fas fa-question-circle"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Modal -->
+            <div class="modal" id="quizModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Latihan Soal</h3>
+                        <button class="close-btn" id="closeQuiz">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="quizContent">
+                            <!-- Quiz content will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
