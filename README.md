@@ -27,7 +27,7 @@ Sistem flipbook pembelajaran digital yang dirancang khusus untuk siswa Sekolah D
 ### 1. Instalasi
 ```bash
 # Clone atau download project
-git clone [repository-url]
+git clone [https://github.com/RiskiGamer-Z/eduflipbook-sd]
 cd flipbook
 
 # Buka file index.html di browser
